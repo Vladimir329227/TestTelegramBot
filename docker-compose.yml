@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  testtelegrambot:
+    image: ${DOCKER_REGISTRY-}testtelegrambot
+    build:
+      context: .
+      dockerfile: TestTelegramBot/Dockerfile
